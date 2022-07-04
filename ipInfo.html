@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IP info</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="js/ipinfo-script.js"></script>
+</head>
+<body>
+<nav id="ipInfo-nav">
+    <ul>
+        <li  onclick="window.location = 'index.html'" >Počasie</li>
+        <li  onclick="window.location = 'ipInfo.html'">IP Info</li>
+        <li  onclick="window.location = 'statistics.html'">Štatistika</li>
+    </ul>
+</nav>
+<header>
+    <h1>IP info</h1>
+</header>
+
+<section id="weather-section">
+    <article id="round">
+        <p id="info"></p>
+        <table id="ip-table">
+            <tbody>
+            <tr>
+                <th>Ip adresa</th>
+                <td id="ip-address"></td>
+            </tr>
+            <tr>
+                <th>GPS súradnice</th>
+                <td id="position-data"></td>
+            </tr>
+            <tr>
+                <th>Obec</th>
+                <td id="village"></td>
+            </tr>
+            <tr>
+                <th>Hlavné mesto</th>
+                <td id="capital-city"></td>
+            </tr>
+            <tr>
+                <th>Štát</th>
+                <td id="country-ip"></td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+</section>
+</body>
+</html>
